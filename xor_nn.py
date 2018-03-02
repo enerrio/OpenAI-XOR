@@ -66,7 +66,6 @@ def build_model():
     '''
     model = Sequential()
     model.add(LSTM(32, input_shape=(50, 1)))
-    # model.add(LSTM(32))
     model.add(Dense(1, activation='sigmoid'))
     # Display model summary
     model.summary()
